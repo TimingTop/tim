@@ -1,0 +1,7 @@
+
+n
+java:S4349"LProvide an empty override of "write(byte[],int,int)" for this class as well.(ìô¡êüÿÿÿÿ8¶Œû”³.
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(è¼Ù§üÿÿÿÿ8Ï‡ü”³.
+G
+java:S1068"*Remove this unused "buffer" private field.(ç‰8¦Ñû”³.

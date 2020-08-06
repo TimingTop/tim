@@ -1,0 +1,15 @@
+
+<
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+•
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.( Æü¨
+š
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(À–®»ÿÿÿÿÿ
+•
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‚“¶î
+R
+java:S1117"?Rename "bindAddress" which hides the field declared at line 12.(ÙÌ‹d
+Q
+java:S3252">Use static access with "java.net.InetAddress" for "getByName".(ÙÌ‹d
+Z
+java:S3252"AUse static access with "java.net.InetAddress" for "getLocalHost".(Öóð‹ûÿÿÿÿ
