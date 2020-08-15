@@ -1,5 +1,7 @@
 
 
+
+### 这个协议格式 是 UDP 的
 ```
 
 
@@ -47,3 +49,30 @@
 
 
 ```
+
+
+###  TCP 的coap 协议
+> https://tools.ietf.org/id/draft-ietf-core-coap-tcp-tls-11.html#:~:text=Conceptually%2C%20CoAP%20over%20TCP%20replaces,the%20UDP%2FDTLS%20datagram%20layer.
+
+```
+ 0                   1                   2                   3
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|  Len  |  TKL  | Extended Length (if any, as chosen by Len) ...
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|      Code     | Token (if any, TKL bytes) ...
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|  Options (if any) ...
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|1 1 1 1 1 1 1 1|    Payload (if any) ...
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+```
+
+len: 4bit, 
+      0- 12： Options 数据段前 n 个字节代表长度
+      13： 使用 Extended Length 的 8bit - 13 表示 options + payload的长度
+      14： 使用 Extended length 的 16bit - 269 表示 options + payload 的长度
+      15： 使用 Extended length 的 32bit - 65805 表示 options + payload 的长度
+
+
+

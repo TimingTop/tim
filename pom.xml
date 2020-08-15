@@ -10,6 +10,7 @@
     <modules>
         <module>imserver</module>
         <module>imcore</module>
+        <module>imnetty</module>
     </modules>
 
     <packaging>pom</packaging>

@@ -1,5 +1,6 @@
 package com.timing.im.network.connector;
 
+import com.timing.im.network.channel.RawDataChannel;
 import com.timing.im.network.endpoint.RawData;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.Unpooled;
@@ -60,6 +61,11 @@ public class TcpNettyServerConnector implements Connector {
 
     @Override
     public void destroy() {
+
+    }
+
+    @Override
+    public void setRawDataReceiver(RawDataChannel messageHandler) {
 
     }
 

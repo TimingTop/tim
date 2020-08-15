@@ -156,6 +156,13 @@ public class RawDataReader {
         return byteStream.available();
     }
 
+    /**
+     * 判断一下有没有期待的 byte 数可读。
+     */
+    public boolean bytesAvailable(final int expectedBytes) {
+        int left = byteStream.available();
+        return left >= expectedBytes;
+    }
 
 
 

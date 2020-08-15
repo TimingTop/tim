@@ -9,4 +9,5 @@ package com.timing.im.protocol.coap;
  *
  */
 public class Message {
+    public static final int NONE = -1;
 }

@@ -1,5 +1,6 @@
 package com.timing.im.network.connector;
 
+import com.timing.im.network.channel.RawDataChannel;
 import com.timing.im.network.endpoint.RawData;
 import com.timing.im.protocol.core.Bytes;
 
@@ -84,6 +85,11 @@ public class UdpConnector implements Connector {
 
     @Override
     public void destroy() {
+
+    }
+
+    @Override
+    public void setRawDataReceiver(RawDataChannel messageHandler) {
 
     }
 

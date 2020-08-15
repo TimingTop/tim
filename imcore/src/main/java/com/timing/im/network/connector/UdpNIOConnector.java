@@ -1,5 +1,6 @@
 package com.timing.im.network.connector;
 
+import com.timing.im.network.channel.RawDataChannel;
 import com.timing.im.network.endpoint.RawData;
 
 import java.io.IOException;
@@ -47,6 +48,11 @@ public class UdpNIOConnector implements Connector {
 
     @Override
     public void destroy() {
+
+    }
+
+    @Override
+    public void setRawDataReceiver(RawDataChannel messageHandler) {
 
     }
 
