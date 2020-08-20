@@ -1,13 +1,17 @@
-package com.timing.im.netty;
+package com.timing.im.netty.loop;
 
 import java.nio.channels.spi.SelectorProvider;
 import java.util.concurrent.Executor;
 
-public class NioEventLoopGroup {
+public class NioEventLoopGroup extends MultiThreadEventLoopGroup {
 
     private NioEventLoop[] children;
 
+
+
     public NioEventLoopGroup(int nThreads, Executor executor, SelectorProvider selectorProvider) {
+
+        super(nThreads, executor);
         // 获取 jdk 实现
         selectorProvider.provider();
         // 获取 系统有关 的实现 实例
